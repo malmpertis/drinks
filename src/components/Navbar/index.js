@@ -35,7 +35,6 @@ const Navbar = () => {
 
   return (
     <AppBar position="static" data-testid="navbar">
-      {console.log(user)}
       <StyledToolbar>
         <TextLogo>
           <img src={textLogo} alt="logo" />

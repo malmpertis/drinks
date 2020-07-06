@@ -26,10 +26,10 @@ const Comments = ({ eventId, comments }) => {
       const newPost = {
         message: newComment,
         timestamp: new Date().toISOString(),
-        user: {
+        user: JSON.stringify({
           name: `${user.attributes.name} ${user.attributes['family_name']}`,
           avatarUrl: user.picture,
-        },
+        }),
         commentEventId: eventId,
       };
       await API.graphql(
@@ -37,7 +37,16 @@ const Comments = ({ eventId, comments }) => {
           input: newPost,
         })
       );
-      setAvailableComments([...availableComments, newPost]);
+      setAvailableComments([
+        ...availableComments,
+        {
+          ...newPost,
+          user: {
+            name: `${user.attributes.name} ${user.attributes['family_name']}`,
+            avatarUrl: user.picture,
+          },
+        },
+      ]);
       setNewComment('');
     } catch (e) {
       console.log(e.message);

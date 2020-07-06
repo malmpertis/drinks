@@ -2,8 +2,8 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreateEvent = /* GraphQL */ `
-  subscription OnCreateEvent($owner: String!) {
-    onCreateEvent(owner: $owner) {
+  subscription OnCreateEvent {
+    onCreateEvent {
       id
       title
       creator
@@ -17,17 +17,15 @@ export const onCreateEvent = /* GraphQL */ `
           message
           timestamp
           user
-          owner
         }
         nextToken
       }
-      owner
     }
   }
 `;
 export const onUpdateEvent = /* GraphQL */ `
-  subscription OnUpdateEvent($owner: String!) {
-    onUpdateEvent(owner: $owner) {
+  subscription OnUpdateEvent {
+    onUpdateEvent {
       id
       title
       creator
@@ -41,17 +39,15 @@ export const onUpdateEvent = /* GraphQL */ `
           message
           timestamp
           user
-          owner
         }
         nextToken
       }
-      owner
     }
   }
 `;
 export const onDeleteEvent = /* GraphQL */ `
-  subscription OnDeleteEvent($owner: String!) {
-    onDeleteEvent(owner: $owner) {
+  subscription OnDeleteEvent {
+    onDeleteEvent {
       id
       title
       creator
@@ -65,17 +61,15 @@ export const onDeleteEvent = /* GraphQL */ `
           message
           timestamp
           user
-          owner
         }
         nextToken
       }
-      owner
     }
   }
 `;
 export const onCreateComment = /* GraphQL */ `
-  subscription OnCreateComment($owner: String!) {
-    onCreateComment(owner: $owner) {
+  subscription OnCreateComment {
+    onCreateComment {
       id
       message
       timestamp
@@ -91,15 +85,13 @@ export const onCreateComment = /* GraphQL */ `
         comments {
           nextToken
         }
-        owner
       }
-      owner
     }
   }
 `;
 export const onUpdateComment = /* GraphQL */ `
-  subscription OnUpdateComment($owner: String!) {
-    onUpdateComment(owner: $owner) {
+  subscription OnUpdateComment {
+    onUpdateComment {
       id
       message
       timestamp
@@ -115,15 +107,13 @@ export const onUpdateComment = /* GraphQL */ `
         comments {
           nextToken
         }
-        owner
       }
-      owner
     }
   }
 `;
 export const onDeleteComment = /* GraphQL */ `
-  subscription OnDeleteComment($owner: String!) {
-    onDeleteComment(owner: $owner) {
+  subscription OnDeleteComment {
+    onDeleteComment {
       id
       message
       timestamp
@@ -139,9 +129,7 @@ export const onDeleteComment = /* GraphQL */ `
         comments {
           nextToken
         }
-        owner
       }
-      owner
     }
   }
 `;

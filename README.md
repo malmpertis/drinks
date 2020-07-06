@@ -2,7 +2,7 @@
 
 > A React SPA using aws amplify cognito for user Authentication and aws GraphQL api (serverless backend).
 
-### Live app: [https://master.d3u9cbvnksk40y.amplifyapp.com/](https://master.d3u9cbvnksk40y.amplifyapp.com/)
+### Live app: [https://drinks.betriply.com/](https://drinks.betriply.com/)
 
 ## Available Tech
 
@@ -13,6 +13,10 @@
 - Axios
 - Moment
 - aws-amplify
+
+## CI / CD
+
+> App is deployed on aws. To init automatic deployment simply push an update on master branch!
 
 ## Available Scripts
 
@@ -30,7 +34,9 @@ Only one test implemented as a POC, unfortunately I didn't have the time to perf
 
 ## Tech Debt
 
-- More Tests (much more, currently there is only one test as a proof of concept)
-- Implement Search Functionality
+- More tests (much more, currently there is only one test as a proof of concept)
+- Add guests
+- useReducer instead of state in order to be able to subscibe to GraphQL changes
+- Implement search functionality
 - More sophisticated relationships in the GraphQL API (users with comments and events)
 - TYPESCRIPT!!!

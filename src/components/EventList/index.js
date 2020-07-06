@@ -23,10 +23,26 @@ const EventList = () => {
   const getData = async () => {
     try {
       const eventData = await API.graphql(graphqlOperation(ListEvents));
-      console.log('---------', eventData);
-      setEvents(eventData.data.listEvents.items);
+      const parsedEvents = eventData.data.listEvents.items.map((event) => {
+        const parsedComments = event.comments.items.map((comment) => {
+          const { user } = comment;
+          return {
+            ...comment,
+            user: JSON.parse(user),
+          };
+        });
+        const { creator, guests, location } = event;
+        return {
+          ...event,
+          creator: JSON.parse(creator),
+          guests: JSON.parse(guests),
+          location: JSON.parse(location),
+          comments: parsedComments,
+        };
+      });
+      setEvents(parsedEvents);
     } catch (e) {
-      console.log(e);
+      console.log(e.message);
     }
   };
 
@@ -56,7 +72,6 @@ const EventList = () => {
               </Typography>
             </Grid>
           </Grid>
-          <div></div>
         </>
       )}
     </Grid>

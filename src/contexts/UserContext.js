@@ -10,7 +10,6 @@ function UserProvider({ children }) {
     const fetchData = async () => {
       try {
         const info = await userInfo();
-        console.log(info);
         const picture = JSON.parse(info.attributes.picture);
         setUser({
           ...info,

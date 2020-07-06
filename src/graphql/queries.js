@@ -17,11 +17,9 @@ export const getEvent = /* GraphQL */ `
           message
           timestamp
           user
-          owner
         }
         nextToken
       }
-      owner
     }
   }
 `;
@@ -46,10 +44,8 @@ export const listEvents = /* GraphQL */ `
             message
             timestamp
             user
-            owner
           }
         }
-        owner
       }
       nextToken
     }
@@ -73,9 +69,7 @@ export const getComment = /* GraphQL */ `
         comments {
           nextToken
         }
-        owner
       }
-      owner
     }
   }
 `;
@@ -99,9 +93,7 @@ export const listComments = /* GraphQL */ `
           location
           time
           type
-          owner
         }
-        owner
       }
       nextToken
     }

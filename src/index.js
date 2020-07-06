@@ -42,11 +42,7 @@ if (!isLocalhost) {
 var configUpdate = config;
 // update the configUpdate constant with the good URLs
 configUpdate.oauth = oauth;
-console.log('--------------------------------------------');
-console.log(oauth);
-console.log(isLocalhost);
-console.log(configUpdate);
-console.log('--------------------------------------------');
+
 // Configure Amplify with configUpdate
 Amplify.configure(configUpdate);
 

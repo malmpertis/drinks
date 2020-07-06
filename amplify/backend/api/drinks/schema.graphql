@@ -1,4 +1,4 @@
-type Event @model @auth(rules: [{ allow: owner, queries: null }]) {
+type Event @model {
   id: ID!
   title: String!
   creator: AWSJSON!
@@ -8,7 +8,7 @@ type Event @model @auth(rules: [{ allow: owner, queries: null }]) {
   type: String!
   comments: [Comment] @connection(name: "EventComments")
 }
-type Comment @model @auth(rules: [{ allow: owner, queries: null }]) {
+type Comment @model {
   id: ID!
   message: String!
   timestamp: String!

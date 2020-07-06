@@ -36,7 +36,7 @@ const EventDetails = ({ event, open, setOpen }) => {
           <Guests guests={event.guests} />
         </Section>
         <Section>
-          <Comments eventId={event.id} comments={event.comments.items} />
+          <Comments eventId={event.id} comments={event.comments} />
         </Section>
       </MuiDialogContent>
     </Dialog>
