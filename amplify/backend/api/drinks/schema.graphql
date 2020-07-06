@@ -1,0 +1,17 @@
+type Event @model @auth(rules: [{ allow: owner, queries: null }]) {
+  id: ID!
+  title: String!
+  creator: AWSJSON!
+  guests: AWSJSON!
+  location: AWSJSON!
+  time: String!
+  type: String!
+  comments: [Comment] @connection(name: "EventComments")
+}
+type Comment @model @auth(rules: [{ allow: owner, queries: null }]) {
+  id: ID!
+  message: String!
+  timestamp: String!
+  user: AWSJSON!
+  event: Event @connection(name: "EventComments")
+}

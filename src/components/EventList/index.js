@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { API, graphqlOperation } from 'aws-amplify';
 import styled from 'styled-components';
-// import { listEvents as ListEvents } from '../../graphql/queries';
+import { listEvents as ListEvents } from '../../graphql/queries';
 import { useUserState } from '../../contexts/UserContext';
 import Beer from '../../assets/beer-icon-large.png';
 
@@ -22,9 +22,9 @@ const EventList = () => {
 
   const getData = async () => {
     try {
-      // const eventData = await API.graphql(graphqlOperation(ListEvents));
-      // console.log('---------', eventData);
-      // setEvents(eventData.data.listEvents.items);
+      const eventData = await API.graphql(graphqlOperation(ListEvents));
+      console.log('---------', eventData);
+      setEvents(eventData.data.listEvents.items);
     } catch (e) {
       console.log(e);
     }

@@ -37,6 +37,10 @@ if (!isLocalhost) {
   oauth.redirectSignIn = 'https://drinks.betriply.com/';
   oauth.redirectSignOut = 'https://drinks.betriply.com/';
 }
+console.log('--------------------------------------------');
+console.log(oauth);
+console.log(isLocalhost);
+console.log('--------------------------------------------');
 
 // copy the constant config (aws-exports.js) because config is read only.
 var configUpdate = config;
