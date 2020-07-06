@@ -1,0 +1,22 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-drinks-dev-220433-authRole",
+            "UnauthRoleArn": "arn:aws:iam::037253559530:role/amplify-drinks-dev-220433-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::037253559530:role/amplify-drinks-dev-220433-authRole",
+            "Region": "eu-west-2",
+            "DeploymentBucketName": "amplify-drinks-dev-220433-deployment",
+            "UnauthRoleName": "amplify-drinks-dev-220433-unauthRole",
+            "StackName": "amplify-drinks-dev-220433",
+            "StackId": "arn:aws:cloudformation:eu-west-2:037253559530:stack/amplify-drinks-dev-220433/df06c2e0-bc96-11ea-8c68-0617023ccf6e",
+            "AmplifyAppId": "d3u9cbvnksk40y"
+        },
+        "categories": {
+            "auth": {
+                "drinks3342e2a5": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"718043342264201\",\"client_secret\":\"4bb45e6b36781f95c727d009d47515ed\"}]"
+                }
+            }
+        }
+    }
+}
