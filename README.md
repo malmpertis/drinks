@@ -1,6 +1,6 @@
 # Drinks
 
-> A React SPA using aws amplify cognito for user Authentication and aws GraphQL api (serverless backend)
+> A React SPA using aws amplify cognito for user Authentication and aws GraphQL api (serverless backend).
 
 ### Live app: [https://master.d3u9cbvnksk40y.amplifyapp.com/](https://master.d3u9cbvnksk40y.amplifyapp.com/)
 
