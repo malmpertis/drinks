@@ -1,20 +1,20 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-drinks-dev-220433-authRole",
-            "UnauthRoleArn": "arn:aws:iam::037253559530:role/amplify-drinks-dev-220433-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::037253559530:role/amplify-drinks-dev-220433-authRole",
+            "AuthRoleName": "amplify-drinks-dev-202246-authRole",
+            "UnauthRoleArn": "arn:aws:iam::037253559530:role/amplify-drinks-dev-202246-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::037253559530:role/amplify-drinks-dev-202246-authRole",
             "Region": "eu-west-2",
-            "DeploymentBucketName": "amplify-drinks-dev-220433-deployment",
-            "UnauthRoleName": "amplify-drinks-dev-220433-unauthRole",
-            "StackName": "amplify-drinks-dev-220433",
-            "StackId": "arn:aws:cloudformation:eu-west-2:037253559530:stack/amplify-drinks-dev-220433/df06c2e0-bc96-11ea-8c68-0617023ccf6e",
-            "AmplifyAppId": "d3u9cbvnksk40y"
+            "DeploymentBucketName": "amplify-drinks-dev-202246-deployment",
+            "UnauthRoleName": "amplify-drinks-dev-202246-unauthRole",
+            "StackName": "amplify-drinks-dev-202246",
+            "StackId": "arn:aws:cloudformation:eu-west-2:037253559530:stack/amplify-drinks-dev-202246/50896350-bfad-11ea-9a02-0622cd7b28da",
+            "AmplifyAppId": "d3w32g5lhkwp9r"
         },
         "categories": {
             "auth": {
-                "drinks3342e2a5": {
-                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"718043342264201\",\"client_secret\":\"4bb45e6b36781f95c727d009d47515ed\"}]"
+                "drinks25724818": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"2675979266014027\",\"client_secret\":\"74693cb8a674a6a1e00f8e4edde9fa25\"}]"
                 }
             }
         }

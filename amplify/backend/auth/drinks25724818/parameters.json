@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "drinks3342e2a5_identitypool_3342e2a5",
+    "identityPoolName": "drinks25724818_identitypool_25724818",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "drinks3342e2a5",
-    "userPoolName": "drinks3342e2a5_userpool_3342e2a5",
+    "resourceNameTruncated": "drinks25724818",
+    "userPoolName": "drinks25724818_userpool_25724818",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,9 +28,9 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "drinks3342e2a5_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "drinks25724818_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "drinks3342e2a5",
+    "resourceName": "drinks25724818",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -46,12 +46,12 @@
     },
     "useDefault": "defaultSocial",
     "hostedUI": true,
-    "hostedUIDomainName": "drinks3342e2a5-3342e2a5",
+    "hostedUIDomainName": "drinks25724818-25724818",
     "authProvidersUserPool": [
         "Facebook"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
     "userPoolGroupList": [],
-    "dependsOn": []
+    "dependsOn": [],
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\",\"http://localhost:3000/\",\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\",\"http://localhost:3000/\"]}"
 }

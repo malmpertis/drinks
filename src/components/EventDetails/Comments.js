@@ -10,7 +10,7 @@ import SingleComment from './SignleComment';
 import SendIcon from '@material-ui/icons/Send';
 import { API, graphqlOperation } from 'aws-amplify';
 import { useUserState } from '../../contexts/UserContext';
-import { createComment as CreateComment } from '../../graphql/mutations';
+// import { createComment as CreateComment } from '../../graphql/mutations';
 
 const FormControlContainer = styled.div`
   margin-top: 24px;
@@ -32,11 +32,12 @@ const Comments = ({ eventId, comments }) => {
         },
         commentEventId: eventId,
       };
-      await API.graphql(
-        graphqlOperation(CreateComment, {
-          input: newPost,
-        })
-      );
+      await API
+        .graphql
+        // graphqlOperation(CreateComment, {
+        //   input: newPost,
+        // })
+        ();
       setAvailableComments([...availableComments, newPost]);
       setNewComment('');
     } catch (e) {
