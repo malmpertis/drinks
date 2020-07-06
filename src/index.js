@@ -37,15 +37,16 @@ if (!isLocalhost) {
   oauth.redirectSignIn = 'https://drinks.betriply.com/';
   oauth.redirectSignOut = 'https://drinks.betriply.com/';
 }
-console.log('--------------------------------------------');
-console.log(oauth);
-console.log(isLocalhost);
-console.log('--------------------------------------------');
 
 // copy the constant config (aws-exports.js) because config is read only.
 var configUpdate = config;
 // update the configUpdate constant with the good URLs
 configUpdate.oauth = oauth;
+console.log('--------------------------------------------');
+console.log(oauth);
+console.log(isLocalhost);
+console.log(configUpdate);
+console.log('--------------------------------------------');
 // Configure Amplify with configUpdate
 Amplify.configure(configUpdate);
 

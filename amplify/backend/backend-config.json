@@ -1,27 +1,27 @@
 {
-	"auth": {
-		"drinks25724818": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation",
-			"dependsOn": [],
-			"customAuth": false
-		}
-	},
-	"api": {
-		"drinks": {
-			"service": "AppSync",
-			"providerPlugin": "awscloudformation",
-			"output": {
-				"authConfig": {
-					"additionalAuthenticationProviders": [],
-					"defaultAuthentication": {
-						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
-						"userPoolConfig": {
-							"userPoolId": "authdrinks25724818"
-						}
-					}
-				}
-			}
-		}
-	}
+    "auth": {
+        "drinks25724818": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [],
+            "customAuth": false
+        }
+    },
+    "api": {
+        "drinks": {
+            "service": "AppSync",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "authConfig": {
+                    "additionalAuthenticationProviders": [],
+                    "defaultAuthentication": {
+                        "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+                        "userPoolConfig": {
+                            "userPoolId": "authdrinks25724818"
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
