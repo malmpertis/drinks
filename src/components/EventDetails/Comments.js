@@ -27,7 +27,7 @@ const Comments = ({ eventId, comments }) => {
         message: newComment,
         timestamp: new Date().toISOString(),
         user: JSON.stringify({
-          name: `${user.attributes.name} ${user.attributes['family_name']}`,
+          name: `${user.attributes.name}`,
           avatarUrl: user.picture,
         }),
         commentEventId: eventId,
@@ -42,7 +42,7 @@ const Comments = ({ eventId, comments }) => {
         {
           ...newPost,
           user: {
-            name: `${user.attributes.name} ${user.attributes['family_name']}`,
+            name: `${user.attributes.name}`,
             avatarUrl: user.picture,
           },
         },

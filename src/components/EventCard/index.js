@@ -66,7 +66,6 @@ const EventCard = ({ event }) => {
             <Place>{event.location.name}</Place>
           </Section>
           <Section>
-            {event.creator.name}
             <UserAvatar url={event.creator.avatarUrl} />
           </Section>
         </StyledCardContent>
