@@ -37,7 +37,9 @@ const EventList = () => {
 
   const getData = async () => {
     try {
-      const eventData = await API.graphql(graphqlOperation(ListEvents));
+      const eventData = await API.graphql(
+        graphqlOperation(ListEvents, { limit: 50 })
+      );
       const parsedEvents = eventData.data.listEvents.items.map((event) => {
         const parsedComments = event.comments.items.map((comment) => {
           const { user } = comment;
