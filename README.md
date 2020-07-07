@@ -35,6 +35,8 @@ Only one test implemented as a POC, unfortunately I didn't have the time to perf
 ## Tech Debt
 
 - More tests (much more, currently there is only one test as a proof of concept)
+- Pagination or infinite scrolling
+- Ways to consume the existing api
 - Add guests
 - useReducer instead of state in order to be able to subscibe to GraphQL changes
 - Implement search functionality
